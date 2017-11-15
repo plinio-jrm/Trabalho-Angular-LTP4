@@ -1,0 +1,32 @@
+<footer>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-6">
+
+        <b>Version</b> 1.0.0
+        <br>
+
+        <strong>{{nome}}
+          <br>
+            {{subTitle}}
+        </strong>
+
+        <br>
+        <b>Professor:</b>{{professor}}
+
+      </div>
+
+
+      <div class="col-sm-6">
+
+        <b>Integrantes</b>
+
+        <li *ngFor="let integrantes of integrantes; let i = index"> {{integrantes}} </li>
+
+      </div>
+
+    </div>
+
+  </div>
+</footer>
