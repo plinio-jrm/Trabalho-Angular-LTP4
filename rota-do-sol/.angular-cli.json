@@ -19,9 +19,17 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "sol",
       "styles": [
+        "../node_modules/admin-lte/bootstrap/css/bootstrap.min.css",
+        "../node_modules/admin-lte/dist/css/AdminLTE.min.css",
+        "../node_modules/admin-lte/dist/css/skins/skin-yellow.min.css",
+        "../node_modules/admin-lte/plugins/iCheck/flat/yellow.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/admin-lte/bootstrap/js/bootstrap.min.js",
+        "../node_modules/admin-lte/dist/js/adminlte.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
