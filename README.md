@@ -5,7 +5,7 @@ Trabalho do curso de Ciência da Computação. Matéria de LTP4, abrangendo Angu
 - Bootstrap 4.0.0
 - Firebase
 
-###### As pessoas envolvidas no trabalho:
+##### As pessoas envolvidas no trabalho:
 - Henrique Camilo Mapa
 - Plinio Jose Rodrigues Mourao
 - Vitor Chamon
