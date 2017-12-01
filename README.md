@@ -12,7 +12,10 @@ Trabalho do curso de Ciência da Computação. Matéria de LTP4, abrangendo Angu
 - Felipe Ravani
 
 ### Observação
-se for utilizar este projeto, favor verificar o vídeo do "[Building An Angular 5 Project with Bootstrap 4 and Firebase](https://www.youtube.com/watch?v=5gT0-9vifuc)", pois é essencial que tenha os pacotes na versão exata instalado na máquina para poder rodar este projeto sem nenhum erro!
+Se for utilizar este projeto, favor verificar o vídeo "[Building An Angular 5 Project with Bootstrap 4 and Firebase](https://www.youtube.com/watch?v=5gT0-9vifuc)", pois é essencial que tenha os pacotes na versão exata instalado na máquina para poder rodar este projeto sem nenhum erro!
 
 ### Media
 ![alt text](https://github.com/plinio-jrm/Trabalho-Angular-LTP4/blob/master/Media/AAI%20LTP4.JPG)
+
+### Feedback
+Estou aberto a tirar dúvidas quanto ao projeto!
