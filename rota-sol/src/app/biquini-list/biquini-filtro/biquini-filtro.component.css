@@ -1,0 +1,25 @@
+.biquini-filtro-title {
+  border-bottom: solid 1px #CCC;
+  margin-bottom: 1rem;
+}
+
+.filtro-cores-title {
+  border-right: solid 1px #CCC;
+}
+
+.box-dica {
+  margin: 3px;
+  width: 200px;
+}
+
+.verde {
+  color: green;
+}
+
+.vermelho {
+  color: red;
+}
+
+.ngb-popover-window {
+  width: 200px !important;
+}

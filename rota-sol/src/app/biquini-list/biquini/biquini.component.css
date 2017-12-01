@@ -1,0 +1,23 @@
+.biquini-img {
+  width: 220px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.biquini-font {
+  font-size: 10pt;
+}
+
+.biquini-cor-title {
+  border-right: solid 1px #AAA;
+}
+
+.biquini-available {
+  color: green;
+}
+
+.biquini-unavailable {
+  color: red;
+}

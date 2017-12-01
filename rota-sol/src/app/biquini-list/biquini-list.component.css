@@ -1,0 +1,10 @@
+.no-data {
+  font-size: 18pt;
+  padding-top: 8rem;
+  text-align: center;
+  display: none;
+}
+
+.filtering-data-show {
+  display: block !important;
+}

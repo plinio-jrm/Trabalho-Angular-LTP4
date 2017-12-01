@@ -1,0 +1,3 @@
+<div *ngFor="let cor of cores" style="float: right;">
+  <cor-single [cor]="cor" [IsCheckable]="isCheckable" (onColorChecked)="OnColorChecked($event)"></cor-single>
+</div>

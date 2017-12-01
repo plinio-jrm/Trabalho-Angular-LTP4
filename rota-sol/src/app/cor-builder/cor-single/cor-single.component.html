@@ -1,0 +1,3 @@
+<div [ngClass]="{'cor-cubo' : true, 'cor-cubo-checkable': IsCheckable, 'cubo-checked': IsSelected(), 'cubo-unchecked': IsntSelected(), 'cubo-readonly': readonly }"
+  [style.backgroundColor]="cor" (click)="ChangeSelect()">
+</div>

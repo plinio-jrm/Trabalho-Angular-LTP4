@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 2rem;
+  margin-bottom: 100px;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  line-height: 15pt;
+  background-color: #8c771d;
+}

@@ -1,0 +1,61 @@
+<p>
+  <!-- filtro -->
+  <ngb-alert [dismissible]="false" type="secondary">
+    <div class="biquini-filtro-title">
+      Filtro
+    </div>
+    <form (keydown.enter)="$event.preventDefault()">
+      <div class="row">
+        <!-- pesquisa por modelo -->
+        <div class="col-md-12 col-lg-6 col-xl-3">
+          <div class="form-group">
+            <label for="filtroModelo">Modelo</label>
+            <input #txtModelo (input)="onKey(txtModelo.value)" id="filtroModelo" type="text" class="form-control" placeholder="Filtre o modelo">
+          </div>
+        </div>
+        <!-- pesquisa por tamanho -->
+        <div class="col-md-6 col-lg-3 col-xl-2">
+          <div class="form-group">
+            <label for="filtroTamanho">Tamanho</label>
+            <select #selTamanho (change)="onTamanho(selTamanho.value)" class="form-control" id="filtroTamanho">
+              <option *ngFor="let sizeT of tamanhos"> {{ sizeT }} </option>
+            </select>
+          </div>
+        </div>
+        <!-- pesquisa por disponibilidade -->
+        <div class="col-md-6 col-lg-3 col-xl-2">
+          <div class="form-group">
+            <label for="filtroDisponivel">Disponibilidade</label>
+            <select #selAvailable (change)="onAvailable(selAvailable.value)" class="form-control" id="filtroDisponivel">
+              <option selected>Todos</option>
+              <option>Disponível</option>
+              <option>Indisponível</option>
+            </select>
+          </div>
+        </div>
+        <!-- dica sobre o filtro de cor -->
+        <ng-template #popContent>
+          <p class="box-dica">
+            <cor-single [cor]="gray" [IsCheckable]="true" [readonly]="true" [CorSelected]="true"></cor-single>
+            A(s) cor(es) com a borda <span class="verde"><b>verde</b></span> irão filtrar os biquinis que tem a(s) cor(es).
+            <br><hr style="color: black;">
+            <cor-single [cor]="gray" [IsCheckable]="true" [readonly]="true" [CorSelected]="false"></cor-single>
+            A(s) cor(es) com a borda <span class="vermelho"><b>vermelha</b></span> irão filtrar os biquinis removendo quais tem a(s) cor(es).
+          </p>
+        </ng-template>
+        <!-- pesquisa por cor -->
+        <div class="col-md-12 col-lg-12 col-xl-5">
+          <div class="row" style="height: 100%; text-align: right;">
+            <div class="col-7 filtro-cores-title">
+              Cores<hr style="margin: 0;">
+              <span style="color: #888;">Clique na cor para selecionar quais cores serão filtradas!</span>
+            </div>
+            <div class="col-5" [ngbPopover]="popContent" placement="bottom" triggers="mouseenter:mouseleave" popoverTitle="Dica!">
+              <cor-builder [cores]="cores" [isCheckable]="true" (onColorChecked)="OnColorChecked($event)"></cor-builder>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </ngb-alert>
+</p>

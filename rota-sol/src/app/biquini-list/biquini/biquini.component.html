@@ -1,0 +1,27 @@
+<div class="card" style="width: 240px; margin-top: 1em;">
+  <div class="card-header"><h6>Modelo {{ biquini.modelo }}</h6></div>
+  <img class="card-img-top biquini-img" [src]="biquini.thumbnail">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-4 biquini-cor-title">
+          Cores:
+        </div>
+        <div class="col-8" style="padding-left: 1pt; padding right: 1pt;">
+          <cor-builder [cores]="biquini.colors"></cor-builder>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="card-footer">
+    <div class="row biquini-font">
+      <div class="col-7" style="padding-right: 0;">
+        <b>Tamanho:</b> {{ biquini.size }}
+      </div>
+      <div class="col-5 text-right" style="padding-left: 0;">
+        <div *ngIf="biquini.available" class="biquini-available"><b>Disponível</b></div>
+        <div *ngIf="!biquini.available" class="biquini-unavailable"><b>Indisponível</b></div>
+      </div>
+    </div>
+  </div>
+</div>

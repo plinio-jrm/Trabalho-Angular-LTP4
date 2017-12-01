@@ -1,0 +1,9 @@
+<biquini-filtro #biquiniFiltro [tamanhos]="tamanhos" [cores]="cores" (onFilter)="OnFilterChange($event)"></biquini-filtro>
+<div class="row">
+  <div *ngFor="let B of (biquiniListArray | biquinisFiltro:filtro)" class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+    <app-biquini [biquini]="B"></app-biquini>
+  </div>
+  <div class="col-12 no-data" [ngClass]="{ 'filtering-data-show': IsDataEmpty() }">
+    <p>Não há registros para o filtro selecionado!</p>
+  </div>
+</div>

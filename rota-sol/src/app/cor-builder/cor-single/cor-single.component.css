@@ -1,0 +1,33 @@
+.cor-cubo {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #AAA;
+  margin: 2px;
+  float: right;
+}
+
+.cor-cubo-checkable {
+  width: 25px !important;
+  height: 25px !important;
+  /*border-radius: 2px !important;*/
+  padding: auto;
+}
+
+.cubo-checked {
+  border: solid 2px green !important;
+}
+
+.cubo-unchecked {
+  border: solid 2px red !important;
+}
+
+.cubo-readonly {
+  width: 17px !important;
+  height: 17px !important;
+  float: left !important;
+  border-radius: 2px !important;
+  margin-right: 1rem;
+}
