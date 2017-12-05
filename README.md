@@ -1,5 +1,7 @@
 # Trabalho de Auto instrucional
 
+#### Descrição
+Trabalho com o intuito de criar um catalogo para uma loja de biquinis.
 Trabalho do curso de Ciência da Computação. Matéria de LTP4, abrangendo Angular. Este trabalho foi feito utilizando:
 - Angular 5
 - Bootstrap 4.0.0
